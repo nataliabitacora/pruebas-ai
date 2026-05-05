@@ -2,7 +2,7 @@
   "$metadata": {
     "name": "Design Tokens",
     "version": "1.0.0",
-    "description": "Sistema de design tokens del proyecto"
+    "description": "Sistema de design tokens"
   },
   "color": {
     "primary": {
