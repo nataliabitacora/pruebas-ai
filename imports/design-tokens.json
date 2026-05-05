@@ -1,0 +1,139 @@
+{
+  "$metadata": {
+    "name": "Design Tokens",
+    "version": "1.0.0",
+    "description": "Sistema de design tokens del proyecto"
+  },
+  "color": {
+    "primary": {
+      "50":  { "$value": "#FFF3EE", "$type": "color", "$description": "Tono primario muy claro" },
+      "100": { "$value": "#FFD6C2", "$type": "color", "$description": "Tono primario claro" },
+      "500": { "$value": "#FF5722", "$type": "color", "$description": "Color primario base" },
+      "700": { "$value": "#C7411A", "$type": "color", "$description": "Tono primario oscuro" },
+      "900": { "$value": "#7A2810", "$type": "color", "$description": "Tono primario muy oscuro" }
+    },
+    "secondary": {
+      "50":  { "$value": "#E0F7F4", "$type": "color", "$description": "Tono secundario muy claro" },
+      "500": { "$value": "#00BFA5", "$type": "color", "$description": "Color secundario base" },
+      "900": { "$value": "#00574B", "$type": "color", "$description": "Tono secundario muy oscuro" }
+    },
+    "neutral": {
+      "0":   { "$value": "#FFFFFF", "$type": "color", "$description": "Blanco" },
+      "50":  { "$value": "#FAFAFA", "$type": "color" },
+      "100": { "$value": "#F5F5F5", "$type": "color" },
+      "300": { "$value": "#BDBDBD", "$type": "color" },
+      "500": { "$value": "#9E9E9E", "$type": "color" },
+      "700": { "$value": "#616161", "$type": "color" },
+      "900": { "$value": "#1A1A1A", "$type": "color", "$description": "Negro casi puro" }
+    },
+    "semantic": {
+      "success": { "$value": "#22C55E", "$type": "color", "$description": "Estado de éxito" },
+      "warning": { "$value": "#F59E0B", "$type": "color", "$description": "Estado de advertencia" },
+      "error":   { "$value": "#EF4444", "$type": "color", "$description": "Estado de error" },
+      "info":    { "$value": "#3B82F6", "$type": "color", "$description": "Estado informativo" }
+    }
+  },
+  "spacing": {
+    "xs":  { "$value": "4px",  "$type": "dimension", "$description": "Espaciado extra pequeño" },
+    "sm":  { "$value": "8px",  "$type": "dimension", "$description": "Espaciado pequeño" },
+    "md":  { "$value": "16px", "$type": "dimension", "$description": "Espaciado medio" },
+    "lg":  { "$value": "24px", "$type": "dimension", "$description": "Espaciado grande" },
+    "xl":  { "$value": "32px", "$type": "dimension", "$description": "Espaciado extra grande" },
+    "2xl": { "$value": "48px", "$type": "dimension", "$description": "Espaciado 2x grande" },
+    "3xl": { "$value": "64px", "$type": "dimension", "$description": "Espaciado 3x grande" }
+  },
+  "borderRadius": {
+    "none": { "$value": "0px",   "$type": "dimension", "$description": "Sin redondeo" },
+    "sm":   { "$value": "4px",   "$type": "dimension" },
+    "md":   { "$value": "8px",   "$type": "dimension" },
+    "lg":   { "$value": "12px",  "$type": "dimension" },
+    "xl":   { "$value": "16px",  "$type": "dimension" },
+    "2xl":  { "$value": "24px",  "$type": "dimension" },
+    "full": { "$value": "9999px","$type": "dimension", "$description": "Forma circular/píldora" }
+  },
+  "fontSize": {
+    "xs":   { "$value": "12px", "$type": "dimension" },
+    "sm":   { "$value": "14px", "$type": "dimension" },
+    "base": { "$value": "16px", "$type": "dimension", "$description": "Tamaño base de texto" },
+    "lg":   { "$value": "18px", "$type": "dimension" },
+    "xl":   { "$value": "20px", "$type": "dimension" },
+    "2xl":  { "$value": "24px", "$type": "dimension" },
+    "3xl":  { "$value": "30px", "$type": "dimension" },
+    "4xl":  { "$value": "36px", "$type": "dimension" }
+  },
+  "fontWeight": {
+    "regular":  { "$value": 400, "$type": "number", "$description": "Peso regular" },
+    "medium":   { "$value": 500, "$type": "number" },
+    "semibold": { "$value": 600, "$type": "number" },
+    "bold":     { "$value": 700, "$type": "number" }
+  },
+  "lineHeight": {
+    "tight":   { "$value": 1.2,  "$type": "number" },
+    "normal":  { "$value": 1.5,  "$type": "number", "$description": "Altura de línea recomendada para párrafos" },
+    "relaxed": { "$value": 1.75, "$type": "number" }
+  },
+  "shadow": {
+    "sm": {
+      "$value": {
+        "offsetX": "0px",
+        "offsetY": "1px",
+        "blur": "2px",
+        "spread": "0px",
+        "color": "rgba(0,0,0,0.05)"
+      },
+      "$type": "shadow",
+      "$description": "Sombra pequeña"
+    },
+    "md": {
+      "$value": {
+        "offsetX": "0px",
+        "offsetY": "4px",
+        "blur": "6px",
+        "spread": "-1px",
+        "color": "rgba(0,0,0,0.1)"
+      },
+      "$type": "shadow",
+      "$description": "Sombra media"
+    },
+    "lg": {
+      "$value": {
+        "offsetX": "0px",
+        "offsetY": "10px",
+        "blur": "15px",
+        "spread": "-3px",
+        "color": "rgba(0,0,0,0.1)"
+      },
+      "$type": "shadow",
+      "$description": "Sombra grande"
+    },
+    "xl": {
+      "$value": {
+        "offsetX": "0px",
+        "offsetY": "20px",
+        "blur": "25px",
+        "spread": "-5px",
+        "color": "rgba(0,0,0,0.1)"
+      },
+      "$type": "shadow",
+      "$description": "Sombra extra grande"
+    }
+  },
+  "components": {
+    "button": {
+      "primary": {
+        "background": { "$value": "#FF5722", "$type": "color", "$description": "Fondo del botón primario" },
+        "foreground": { "$value": "#FFFFFF", "$type": "color", "$description": "Texto del botón primario" },
+        "padding":    { "$value": "12px 24px", "$type": "dimension", "$description": "Padding del botón" }
+      },
+      "secondary": {
+        "background": { "$value": "#F5F5F5", "$type": "color" },
+        "foreground": { "$value": "#1A1A1A", "$type": "color" }
+      }
+    },
+    "card": {
+      "background":   { "$value": "#FFFFFF", "$type": "color" },
+      "borderRadius": { "$value": "16px",    "$type": "dimension" },
+      "padding":      { "$value": "24px",    "$type": "dimension" }
+    }
+  }
+}
